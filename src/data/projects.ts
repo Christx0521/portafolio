@@ -13,33 +13,44 @@ export const GITHUB_USER = "Christx0521";
 export const GITHUB_PROFILE = `https://github.com/${GITHUB_USER}`;
 export const CONTACT_EMAIL = "christianxnietog@gmail.com";
 
+const repo = (name: string): string => `${GITHUB_PROFILE}/${name}`;
+
 export const projects: Project[] = [
   {
     id: "neo",
     title: "NEO — Asistente IA por voz",
     description:
-      "Asistente de IA offline en Python: reconocimiento de voz con faster-whisper en GPU, cerebro con Ollama (qwen2.5), voz con Piper, visión con moondream y control del PC. Incluye memoria, plan confirmado y capa de seguridad por niveles.",
+      "Asistente de IA offline en español: reconocimiento de voz con faster-whisper en GPU, cerebro con Ollama, voz con Piper, visión y control del PC. Incluye memoria, plan confirmado y una capa de seguridad por niveles.",
     tags: ["Python", "Ollama", "faster-whisper", "Piper", "IA"],
     category: "IA",
-    repoUrl: GITHUB_PROFILE,
+    repoUrl: repo("neo"),
   },
   {
-    id: "pacman",
-    title: "Pac-Man",
+    id: "interarcade",
+    title: "InterArcade",
     description:
-      "Clon completo del clásico arcade en Unity con C#. Movimiento por grilla, IA de fantasmas y manejo de entrada con el New Input System.",
-    tags: ["Unity", "C#", "New Input System"],
+      "Colección de juegos arcade desarrollados en Unity con C#, proyecto realizado entre estudiantes de la Inter.",
+    tags: ["Unity", "C#", "Arcade"],
     category: "Juegos",
-    repoUrl: GITHUB_PROFILE,
+    repoUrl: repo("InterArcade"),
   },
   {
-    id: "bananamovement",
-    title: "BananaMovement",
+    id: "pov-parkour",
+    title: "POV Parkour",
     description:
-      "Proyecto de juego en Unity centrado en mecánicas de movimiento del personaje. En desarrollo activo, iterando físicas y controles.",
-    tags: ["Unity", "C#", "Gameplay"],
+      "Speedrunner de parkour en primera persona inspirado en Wipeout: recorre un circuito lleno de trampas buscando el mejor tiempo. Proyecto semestral de Videojuegos 1.",
+    tags: ["Unity", "C#", "FPS"],
     category: "Juegos",
-    repoUrl: GITHUB_PROFILE,
+    repoUrl: repo("pov-parkour-game"),
+  },
+  {
+    id: "t-rex-clone",
+    title: "T-Rex Runner",
+    description:
+      "Recreación del dinosaurio offline de Chrome, hecha en Unity con C#.",
+    tags: ["Unity", "C#"],
+    category: "Juegos",
+    repoUrl: repo("t-rex-clone-unity"),
   },
   {
     id: "hanoi",
@@ -48,15 +59,14 @@ export const projects: Project[] = [
       "Resolución de la Torre de Hanói en C++17 aplicando recursividad y RAII. Uso de contenedores estándar y gestión de recursos sin punteros crudos.",
     tags: ["C++17", "Recursividad", "RAII"],
     category: "Sistemas",
-    repoUrl: GITHUB_PROFILE,
   },
   {
-    id: "php-jugadores",
-    title: "Gestión de jugadores (PHP)",
+    id: "mini-twitter",
+    title: "mini-twitter (PHP)",
     description:
-      "Aplicación web CRUD con PHP y PDO sobre MySQL en XAMPP. Consultas preparadas, patrón POST-Redirect-GET y renderizado de listados. Desarrollada en el curso COMP3015.",
-    tags: ["PHP", "PDO", "MySQL", "XAMPP"],
+      "Mini red social tipo Twitter en PHP (PDO) + MySQL: autenticación, posts de 140 caracteres y feeds global y propio.",
+    tags: ["PHP", "PDO", "MySQL"],
     category: "Web",
-    repoUrl: GITHUB_PROFILE,
+    repoUrl: repo("mini-twitter-php"),
   },
 ];
