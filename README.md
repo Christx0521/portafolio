@@ -1,4 +1,4 @@
-# Portafolio — Christian Xavier Nieto (Mr. C)
+# Portafolio — Christian Xavier Nieto
 
 Portafolio personal de desarrollador junior full-stack y game dev. Construido con
 Vite + React + TypeScript y CSS Modules, sin dependencias de estilos externas.
