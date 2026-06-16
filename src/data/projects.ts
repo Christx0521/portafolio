@@ -59,6 +59,7 @@ export const projects: Project[] = [
       "Resolución de la Torre de Hanói en C++17 aplicando recursividad y RAII. Uso de contenedores estándar y gestión de recursos sin punteros crudos.",
     tags: ["C++17", "Recursividad", "RAII"],
     category: "Sistemas",
+    repoUrl: repo("BST-DS"),
   },
   {
     id: "mini-twitter",
