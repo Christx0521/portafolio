@@ -11,6 +11,7 @@ export interface Project {
 
 export const GITHUB_USER = "Christx0521";
 export const GITHUB_PROFILE = `https://github.com/${GITHUB_USER}`;
+export const LINKEDIN_URL = "https://www.linkedin.com/in/christian-xavier-nieto/";
 export const CONTACT_EMAIL = "christianxnietog@gmail.com";
 
 const repo = (name: string): string => `${GITHUB_PROFILE}/${name}`;
@@ -18,55 +19,55 @@ const repo = (name: string): string => `${GITHUB_PROFILE}/${name}`;
 export const projects: Project[] = [
   {
     id: "neo",
-    title: "NEO — Asistente IA por voz",
+    title: "NEO - Asistente de IA por voz",
     description:
-      "Asistente de IA offline en español: reconocimiento de voz con faster-whisper en GPU, cerebro con Ollama, voz con Piper, visión y control del PC. Incluye memoria, plan confirmado y una capa de seguridad por niveles.",
-    tags: ["Python", "Ollama", "faster-whisper", "Piper", "IA"],
+      "Asistente de IA por voz 100% local para Windows: escucha continua, wake word, STT con faster-whisper (GPU), cerebro con Ollama y voz Piper offline.",
+    tags: ["Python", "Whisper", "Ollama", "Piper", "Offline-first"],
     category: "IA",
     repoUrl: repo("neo"),
   },
   {
-    id: "interarcade",
-    title: "InterArcade",
+    id: "cross-games",
+    title: "Cross-Games",
     description:
-      "Colección de juegos arcade desarrollados en Unity con C#, proyecto realizado entre estudiantes de la Inter.",
-    tags: ["Unity", "C#", "Arcade"],
-    category: "Juegos",
-    repoUrl: repo("InterArcade"),
+      "Red social y de chat en tiempo real para gamers: DMs, grupos, foros estilo Reddit, feed, stories, presencia en vivo y moderacion.",
+    tags: ["React", "Node.js", "TypeScript", "Socket.io", "PostgreSQL"],
+    category: "Web",
+    repoUrl: repo("cross-games"),
   },
   {
     id: "pov-parkour",
-    title: "POV Parkour",
+    title: "POV Parkour Game",
     description:
-      "Speedrunner de parkour en primera persona inspirado en Wipeout: recorre un circuito lleno de trampas buscando el mejor tiempo. Proyecto semestral de Videojuegos 1.",
-    tags: ["Unity", "C#", "FPS"],
+      "Speedrunner de parkour en primera persona inspirado en Wipeout: recorre un circuito lleno de trampas buscando el mejor tiempo.",
+    tags: ["Unity", "C#", "Game Dev"],
     category: "Juegos",
     repoUrl: repo("pov-parkour-game"),
   },
   {
     id: "t-rex-clone",
-    title: "T-Rex Runner",
+    title: "T-Rex Clone (Unity)",
     description:
-      "Recreación del dinosaurio offline de Chrome, hecha en Unity con C#.",
-    tags: ["Unity", "C#"],
+      "Recreacion del juego del dinosaurio offline de Chrome, construido en Unity con C#.",
+    tags: ["Unity", "C#", "Game Dev"],
     category: "Juegos",
     repoUrl: repo("t-rex-clone-unity"),
   },
   {
-    id: "hanoi",
-    title: "Torre de Hanói",
+    id: "bst-ds",
+    title: "Torre de Hanoi / BST-DS",
     description:
-      "Resolución de la Torre de Hanói en C++17 aplicando recursividad y RAII. Uso de contenedores estándar y gestión de recursos sin punteros crudos.",
-    tags: ["C++17", "Recursividad", "RAII"],
+      "Visualizador interactivo de estructuras de datos y algoritmos, incluyendo la Torre de Hanoi, desarrollado en Unity.",
+    tags: ["Unity", "C#", "Algoritmos"],
     category: "Sistemas",
     repoUrl: repo("BST-DS"),
   },
   {
-    id: "mini-twitter",
-    title: "mini-twitter (PHP)",
+    id: "mini-twitter-php",
+    title: "Mini Twitter (PHP)",
     description:
-      "Mini red social tipo Twitter en PHP (PDO) + MySQL: autenticación, posts de 140 caracteres y feeds global y propio.",
-    tags: ["PHP", "PDO", "MySQL"],
+      "App minimalista de microblogging tipo Twitter en PHP (PDO) + MySQL: autenticacion, posts de 140 caracteres y feeds global y propio.",
+    tags: ["PHP", "MySQL", "PDO"],
     category: "Web",
     repoUrl: repo("mini-twitter-php"),
   },
